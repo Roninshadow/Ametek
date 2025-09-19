@@ -1,0 +1,136 @@
+$green: #339e61;
+$green2: #20512b;
+$red: #dd2b1c;
+$red2: #bf0d00;
+$white: #ffffff;
+$gray1: #f6f6f6;
+$gray2: #e8e9ed;
+$gray3: #8e8f93;
+$black: #14141e;
+
+@mixin H0-bold {
+	color: $black;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+@mixin H1-semibold {
+	color: $black;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+@mixin H2-bold {
+	color: $black;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+@mixin H3-semibold {
+	color: $black;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+@mixin H3-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+@mixin H4-medium {
+	color: $black;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+@mixin H4-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+@mixin H5-semibold {
+	color: $black;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+@mixin H5-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+@mixin H5-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+@mixin H5-light {
+	color: $black;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+@mixin H6-medium {
+	color: $black;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+@mixin H6-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+@mixin H6-regular- {
+	color: $black;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+
+@mixin H6-light {
+	color: $black;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+@mixin H7-medium {
+	color: $black;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+@mixin H7-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+@mixin H8-regular {
+	color: $black;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+@mixin H8-regular- {
+	color: $black;
+	font-weight: 400;
+	font-size: 10px;
+	text-decoration: line-through;
+}
+
+@mixin main-btn {
+	padding: 12px 25px;
+	background: $green;
+	border-radius: 8px;
+	@include H5-regular;
+	color: $white;
+	@media (max-width: 375px) {
+		padding: 12px 15px;
+	}
+}

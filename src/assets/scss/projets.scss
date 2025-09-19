@@ -1,2 +1,79 @@
 /* Стили для страницы projets */
+@use 'variables' as *;
 
+.projets {
+	padding: 100px 0;
+	.container {
+		.projets__title {
+			@include H2-bold;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.projets__subtitle {
+			@include H3-semibold;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+
+		.projets__swiper {
+			margin-top: 50px;
+			position: relative;
+			.projets__swiper-list {
+				display: flex;
+				gap: 20px;
+				.projets__swiper-item {
+					display: flex;
+					padding: 40px 20px;
+					background: $white;
+					min-width: 622px;
+					border-radius: 8px;
+					gap: 20px;
+					.projets__swiper-item-content {
+						display: flex;
+						flex-direction: column;
+						gap: 14px;
+						.projets__swiper-item-contentItem {
+						}
+						.projets__swiper-item-contentItem-text {
+							@include H6-light;
+							br {
+							}
+						}
+						.projets__swiper-item-contentItem-title {
+							@include H5-semibold;
+							color: $gray3;
+							text-transform: uppercase;
+						}
+						.projets__swiper-item-contentItem-type {
+							@include H3-semibold;
+						}
+					}
+					.projets__swiper-item-image {
+						border-radius: 8px;
+					}
+				}
+			}
+			.swiper-button-next {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+				cursor: pointer;
+			}
+			.swiper-button-prev {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				cursor: pointer;
+			}
+		}
+		.projets__container-btn {
+			text-align: center;
+			.projets__btn {
+				@include main-btn;
+				margin-top: 50px;
+			}
+		}
+	}
+}

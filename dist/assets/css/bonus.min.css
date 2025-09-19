@@ -1,2 +1,74 @@
 @charset "UTF-8";
 /* Стили для страницы bonus */
+.bonus {
+  background: #ffffff;
+  padding: 110px 0;
+}
+.bonus .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 44px;
+}
+@media (max-width: 768px) {
+  .bonus .container {
+    flex-direction: column;
+  }
+}
+.bonus .container .bonus__content .bonus__content-title {
+  color: #14141e;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.bonus .container .bonus__content .bonus__content-subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.bonus .container .bonus__content .bonus__content-options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 35px;
+  gap: 10px;
+}
+.bonus .container .bonus__content .bonus__content-options .bonus__content-option {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #339e61;
+  color: #14141e;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+}
+.bonus .container .bonus__content .bonus__content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  margin-top: 30px;
+}
+.bonus .container .bonus__content .bonus__content-form-input {
+  background: #f6f6f6;
+  padding: 10px 14px;
+  border-radius: 5px;
+  min-width: 420px;
+}
+.bonus .container .bonus__content .bonus__content-form-btn {
+  padding: 12px 25px;
+  background: #339e61;
+  border-radius: 8px;
+  color: #14141e;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+@media (max-width: 375px) {
+  .bonus .container .bonus__content .bonus__content-form-btn {
+    padding: 12px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .bonus .container .bonus__content .bonus__content-form-btn {
+    width: 100%;
+  }
+}

@@ -1,2 +1,88 @@
 @charset "UTF-8";
 /* Стили для страницы pluses */
+.pluses {
+    padding: 50px 0;
+}
+
+.pluses .container .pluses__title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pluses .container .pluses__subtitle {
+    padding-bottom: 14px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+    border-bottom: 1px solid #339e61;
+}
+
+.pluses .container .pluses__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 0;
+    counter-reset: pluses;
+    gap: 20px;
+}
+
+.pluses .container .pluses__list .pluses__item {
+    padding: 30px 20px;
+    padding-left: 76px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 3px;
+    min-height: 216px;
+    transition: 0.2s;
+}
+
+.pluses .container .pluses__list .pluses__item::before {
+    content: counter(pluses);
+    counter-increment: pluses;
+    background: rgba(0, 167, 89, 0.1);
+    color: #339e61;
+    padding: 7px 14px;
+    border-radius: 100px;
+    top: 30px;
+    left: 20px;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.pluses .container .pluses__list .pluses__item:hover {
+    box-shadow: 0px 0px 22px 0px rgba(34, 60, 80, 0.2);
+}
+
+.pluses .container .pluses__list .pluses__item:hover::before {
+    background: #339e61;
+    color: #ffffff;
+}
+
+.pluses .container .pluses__list .pluses__item-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.pluses .container .pluses__list .pluses__item-text {
+    color: #14141e;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.pluses .container div {
+    text-align: center;
+}
+
+.pluses .container div .pluses__btn {
+    padding: 12px 25px;
+    background: #339e61;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}

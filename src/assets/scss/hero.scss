@@ -1,1 +1,35 @@
 @use 'variables' as *;
+
+.hero {
+	background-image: url(../images/hero-image.jpg);
+	padding: 130px 0;
+	.container {
+		.hero__title {
+			@include H1-semibold;
+			text-transform: uppercase;
+			max-width: 622px;
+			margin-bottom: 26px;
+		}
+		.hero__subtitle {
+			@include H5-regular;
+		}
+		.hero__buttons {
+			margin-top: 26px;
+			display: flex;
+			gap: 10px;
+			@media (max-width: 480px) {
+				flex-direction: column;
+			}
+			.hero__buttons-commerceBtn {
+				@include H5-regular;
+				@include main-btn;
+			}
+			.hero__buttons-consultBtn {
+				padding: 12px 15px;
+				background: $gray2;
+				border-radius: 8px;
+				@include H5-regular;
+			}
+		}
+	}
+}

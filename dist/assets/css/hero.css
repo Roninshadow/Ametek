@@ -1,0 +1,48 @@
+.hero {
+    background-image: url(../images/hero-image.jpg);
+    padding: 130px 0;
+}
+
+.hero .container .hero__title {
+    color: #14141e;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    max-width: 622px;
+    margin-bottom: 26px;
+}
+
+.hero .container .hero__subtitle {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero .container .hero__buttons {
+    margin-top: 26px;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+}
+
+.hero .container .hero__buttons .hero__buttons-commerceBtn {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px 25px;
+    background: #339e61;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.hero .container .hero__buttons .hero__buttons-consultBtn {
+    padding: 12px 15px;
+    background: #e8e9ed;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+}

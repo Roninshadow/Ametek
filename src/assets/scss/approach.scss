@@ -1,2 +1,70 @@
 /* Стили для страницы approach */
+@use 'variables' as *;
 
+.approach {
+	padding: 100px 0;
+	.container {
+		.approach__title {
+			@include H2-bold;
+			margin-bottom: 10px;
+		}
+		.approach__subtitle {
+			@include H3-semibold;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+			br {
+			}
+		}
+		.approach__list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+			margin-top: 50px;
+			@media (max-width: 1024px) {
+				grid-template-columns: 1fr;
+			}
+			@media (max-width: 768px) {
+				display: flex;
+				gap: 10px;
+			}
+			.approach__item {
+				padding: 20px;
+				background: $white;
+				border-radius: 8px;
+				display: flex;
+				gap: 18px;
+				@media (max-width: 768px) {
+					flex-direction: column;
+					min-width: 320px;
+				}
+				.approach__item-content {
+					.approach__item-title {
+						@include H5-semibold;
+						text-transform: uppercase;
+					}
+					.approach__item-text {
+						@include H6-regular;
+						margin-top: 15px;
+						height: 100%;
+						max-height: 160px;
+					}
+					.approach__item-btn {
+						margin-top: 20px;
+						color: $green;
+						padding-bottom: 5px;
+						border-bottom: 1px dashed $green;
+						&:hover {
+						}
+						&:active {
+						}
+						&:focus {
+						}
+					}
+				}
+				.approach__item-image {
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,2 +1,60 @@
 /* Стили для страницы faq */
+@use 'variables' as *;
 
+.faq {
+	padding: 100px 0;
+	.container {
+		.faq__title {
+			@include H2-bold;
+			margin-bottom: 10px;
+		}
+		.faq__subtitle {
+			padding-bottom: 14px;
+			@include H3-semibold;
+			border-bottom: 1px solid $green;
+		}
+		.faq__list {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			.faq__item {
+				padding: 28px 40px;
+				background: $white;
+				cursor: pointer;
+				border-radius: 8px;
+				position: relative;
+				padding-right: 72px;
+				&::before {
+					content: '';
+					background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'><path d='M15.8337 7.5835L10.0003 13.4168L4.16699 7.5835' stroke='%2314141E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+						no-repeat center center;
+          position: absolute;
+          top: 30px;
+          right: 40px;
+          width: 20px;
+          height: 20px;
+				}
+				.faq__item-question {
+          @include H4-medium;
+				}
+				.faq__item-answer {
+					max-height: 0;
+					overflow: hidden;
+				}
+			}
+			.faq__item.active {
+				&::before {
+          rotate: 180deg;
+				}
+				.faq__item-question {
+				}
+				.faq__item-answer {
+					max-height: 500px;
+					overflow: hidden;
+          margin-top: 10px;
+				}
+			}
+		}
+	}
+}

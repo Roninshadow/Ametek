@@ -1,2 +1,122 @@
 @charset "UTF-8";
 /* Стили для страницы form */
+.form {
+    background: #ffffff;
+    padding: 100px 0;
+}
+
+.form .container .form__title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form .container .form__subtitle {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #339e61;
+}
+
+.form .container .form__container {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 70px;
+    margin-top: 50px;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.form .container .form__container .form__container-form {
+    padding: 40px;
+    background: #E6F7EF;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.form .container .form__container .form__container-form-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.form .container .form__container .form__container-form-subtitle {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.form .container .form__container .form__container-form-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.form .container .form__container .form__container-form-form .form__container-form-form-input {
+    padding: 10px 14px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.form .container .form__container .form__container-form-form .form__container-form-form-btn {
+    padding: 12px 25px;
+    background: #339e61;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.form .container .form__container .form__container-form-subtext {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.form .container .form__container .form__container-contacts-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form .container .form__container .form__container-contacts-list .form__container-contacts-item {
+    margin-bottom: 14px;
+}
+
+.form .container .form__container .form__container-contacts-list .form__container-contacts-item-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form .container .form__container .form__container-contacts-list .form__container-contacts-item-info {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form .container .form__container .form__container-contacts-list .form__container-contacts-item-phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form .container .form__container .form__container-contacts-map {
+    margin-top: 26px;
+}

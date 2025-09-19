@@ -1,2 +1,67 @@
 /* Стили для страницы about */
+@use 'variables' as *;
 
+.about {
+  padding: 100px 0;
+	.container {
+		.about__title {
+			@include H2-bold;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.about__flex {
+			display: flex;
+      background: $white;
+      margin-top: 50px;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
+			.about__list {
+				padding: 20px;
+				.about__item {
+          margin-bottom: 12px;
+					.about__item-title {
+            @include H4-medium;
+            margin-bottom: 12px;
+					}
+					.about__item-text {
+            @include H5-light;
+
+					}
+				}
+				.about__list-btn {
+          @include H5-regular;
+          color: $gray3;
+          padding-bottom: 5px;
+          border-bottom: 1px dashed $gray3;
+				}
+			}
+			.about__image {
+        max-width: 535px;
+				@media (max-width: 768px) {
+				max-width: none;
+			}
+			}
+		}
+		.about__subPluses {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 50px;
+      gap: 20px;
+			.about__subPlus {
+        background: $white;
+        border-radius: 6px;
+        text-align: center;
+        padding: 20px;
+			}
+			.about__subplus-title {
+        @include H0-bold;
+        color: $green;
+			}
+			.about__subPlus-name {
+        @include H6-regular;
+        margin-top: 8px;
+			}
+		}
+	}
+}

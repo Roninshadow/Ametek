@@ -1,2 +1,54 @@
 /* Стили для страницы equipment */
+@use 'variables' as *;
 
+.equipment {
+	padding: 100px 0;
+	.container {
+		.equipment__title {
+			@include H2-bold;
+		}
+		.equipment__subtitle {
+			@include H3-semibold;
+			margin-top: 10px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.equipment__text {
+			@include H4-regular;
+			max-width: 570px;
+			margin-top: 14px;
+		}
+		.swiper.equipment__tech {
+			margin-top: 50px;
+			position: relative;
+			.swiper-wrapper.equipment__techList {
+				display: flex;
+				gap: 20px;
+			}
+			.swiper-button-next {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+			}
+			.swiper-button-prev {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+			}
+			.equipment__techItem.swiper-slide {
+				padding: 20px;
+				text-align: center;
+				background: $white;
+				min-height: 145px;
+				min-width: 300px;
+				.equipment__techItem-image {
+					
+				}
+			}
+		}
+	}
+}

@@ -1,2 +1,105 @@
 @charset "UTF-8";
 /* Стили для страницы projets */
+.projets {
+    padding: 100px 0;
+}
+
+.projets .container .projets__title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.projets .container .projets__subtitle {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #339e61;
+}
+
+.projets .container .projets__swiper {
+    margin-top: 50px;
+    position: relative;
+}
+
+.projets .container .projets__swiper .projets__swiper-list {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 20px;
+    background: #ffffff;
+    min-width: 622px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item .projets__swiper-item-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item .projets__swiper-item-content .projets__swiper-item-contentItem-text {
+    color: #14141e;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item .projets__swiper-item-content .projets__swiper-item-contentItem-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 16px;
+    color: #8e8f93;
+    text-transform: uppercase;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item .projets__swiper-item-content .projets__swiper-item-contentItem-type {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.projets .container .projets__swiper .projets__swiper-list .projets__swiper-item .projets__swiper-item-image {
+    border-radius: 8px;
+}
+
+.projets .container .projets__swiper .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.projets .container .projets__swiper .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.projets .container .projets__container-btn {
+    text-align: center;
+}
+
+.projets .container .projets__container-btn .projets__btn {
+    padding: 12px 25px;
+    background: #339e61;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 50px;
+}

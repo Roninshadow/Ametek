@@ -1,2 +1,47 @@
 /* Стили для страницы product */
+@use 'variables' as *;
 
+.product {
+	padding: 100px 0;
+	.container {
+		.product__title {
+			@include H2-bold;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.product__list {
+			margin-top: 50px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 20px;
+			@media (max-width: 768px) {
+				display: flex;
+				gap: 10px;
+			}
+			.product__item {
+				padding: 20px;
+				background: $white;
+				border-radius: 10px;
+				.product__item-image {
+					border-radius: 10px;
+				}
+				.product__item-title {
+					@include H5-semibold;
+				}
+				.product__item-btn {
+					margin-top: 18px;
+					@include H5-regular;
+					color: $green;
+					padding-bottom: 5px;
+					border-bottom: 1px dashed $green;
+					&:hover {
+					}
+					&:active {
+					}
+					&:focus {
+					}
+				}
+			}
+		}
+	}
+}

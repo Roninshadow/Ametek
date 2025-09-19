@@ -1,2 +1,82 @@
 @charset "UTF-8";
 /* Стили для страницы about */
+.about {
+    padding: 100px 0;
+}
+
+.about .container .about__title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #339e61;
+}
+
+.about .container .about__flex {
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff;
+    margin-top: 50px;
+}
+
+.about .container .about__flex .about__list {
+    padding: 20px;
+}
+
+.about .container .about__flex .about__list .about__item {
+    margin-bottom: 12px;
+}
+
+.about .container .about__flex .about__list .about__item .about__item-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.about .container .about__flex .about__list .about__item .about__item-text {
+    color: #14141e;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.about .container .about__flex .about__list .about__list-btn {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8e8f93;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #8e8f93;
+}
+
+.about .container .about__flex .about__image {
+    max-width: 535px;
+}
+
+.about .container .about__subPluses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.about .container .about__subPluses .about__subPlus {
+    background: #ffffff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about .container .about__subPluses .about__subplus-title {
+    color: #14141e;
+    font-size: 32px;
+    font-weight: 700;
+    color: #339e61;
+}
+
+.about .container .about__subPluses .about__subPlus-name {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+}

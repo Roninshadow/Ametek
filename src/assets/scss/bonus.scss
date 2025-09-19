@@ -1,2 +1,67 @@
 /* Стили для страницы bonus */
+@use 'variables' as *;
 
+.bonus {
+	background: $white;
+	padding: 110px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 44px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+		.bonus__content {
+			.bonus__content-title {
+				@include H2-bold;
+				margin-bottom: 30px;
+			}
+			.bonus__content-subtitle {
+				font-family: 'Manrope', sans-serif;
+				font-size: 22px;
+				font-weight: 400;
+			}
+			.bonus__content-options {
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				margin-top: 35px;
+				gap: 10px;
+				.bonus__content-option {
+					padding-bottom: 5px;
+					border-bottom: 1px dashed $green;
+					@include H5-regular;
+					display: inline-block;
+				}
+			}
+
+			.bonus__content-form {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				align-items: start;
+				margin-top: 30px;
+			}
+			.bonus__content-form-input {
+				background: $gray1;
+				padding: 10px 14px;
+				border-radius: 5px;
+				min-width: 420px;
+			}
+			.bonus__content-form-btn {
+				@include main-btn;
+				@media (max-width: 480px) {
+					width: 100%;
+				}
+				&:hover {
+				}
+				&:active {
+				}
+				&:focus {
+				}
+			}
+		}
+		.bonus__image {
+		}
+	}
+}

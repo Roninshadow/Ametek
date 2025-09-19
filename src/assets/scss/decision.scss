@@ -1,2 +1,90 @@
 /* Стили для страницы decision */
+@use 'variables' as *;
 
+.decision {
+	padding: 100px 0;
+	.container {
+		.decision__title {
+			@include H2-bold;
+		}
+		.decision__subtitle {
+			@include H3-semibold;
+			margin-top: 10px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.decision__content {
+			display: flex;
+			padding: 30px;
+			background: $white;
+			margin-top: 50px;
+			gap: 30px;
+			@media (max-width: 768px) {
+				flex-direction: column;
+				overflow: hidden;
+			}
+			.decision__content-tabs {
+				border-right: 1px solid $gray2;
+				padding-right: 30px;
+				@media (max-width: 768px) {
+					display: flex;
+					border-right: none;
+				}
+				.decision__content-tab {
+					padding: 12px 20px;
+					@include H6-medium;
+					cursor: pointer;
+					@media (max-width: 768px) {
+						white-space: nowrap;
+						text-transform: uppercase;
+					}
+				}
+				.decision__content-tab.active {
+					background: $gray1;
+					border-radius: 4px;
+				}
+			}
+			.decision__content-blocks {
+				.decision__content-block {
+					max-width: 700px;
+					display: none;
+
+					.decision__content-text {
+					}
+					.decision__content-image {
+					}
+					.decision__content-text-title {
+						@include H5-semibold;
+						text-transform: uppercase;
+						margin-bottom: 16px;
+					}
+					.decision__content-text-subtitle {
+						@include H6-regular;
+
+						br {
+						}
+					}
+					.decision__content-btn {
+						padding: 12px 25px;
+						border-radius: 8px;
+						border: 1px solid $green;
+						margin-top: 40px;
+					}
+				}
+				.decision__content-block.active {
+					display: flex;
+					gap: 40px;
+					@media (max-width: 768px) {
+						gap: 0;
+						padding-top: 40px;
+						border-top: 1px solid $gray2;
+					}
+					@media (max-width: 480px) {
+						flex-direction: column;
+						gap: 40px;
+					}
+				}
+			}
+		}
+	}
+}

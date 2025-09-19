@@ -1,2 +1,54 @@
 @charset "UTF-8";
 /* Стили для страницы equipment */
+.equipment {
+  padding: 100px 0;
+}
+.equipment .container .equipment__title {
+  color: #14141e;
+  font-weight: 700;
+  font-size: 24px;
+}
+.equipment .container .equipment__subtitle {
+  color: #14141e;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #339e61;
+}
+.equipment .container .equipment__text {
+  color: #14141e;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 570px;
+  margin-top: 14px;
+}
+.equipment .container .swiper.equipment__tech {
+  margin-top: 50px;
+  position: relative;
+}
+.equipment .container .swiper.equipment__tech .swiper-wrapper.equipment__techList {
+  display: flex;
+  gap: 20px;
+}
+.equipment .container .swiper.equipment__tech .swiper-button-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.equipment .container .swiper.equipment__tech .swiper-button-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.equipment .container .swiper.equipment__tech .equipment__techItem.swiper-slide {
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  min-height: 145px;
+  min-width: 300px;
+}

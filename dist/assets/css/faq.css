@@ -1,2 +1,68 @@
 @charset "UTF-8";
 /* Стили для страницы faq */
+.faq {
+    padding: 100px 0;
+}
+
+.faq .container .faq__title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq .container .faq__subtitle {
+    padding-bottom: 14px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 22px;
+    border-bottom: 1px solid #339e61;
+}
+
+.faq .container .faq__list {
+    margin-top: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .container .faq__list .faq__item {
+    padding: 28px 40px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+.faq .container .faq__list .faq__item::before {
+    content: "";
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'><path d='M15.8337 7.5835L10.0003 13.4168L4.16699 7.5835' stroke='%2314141E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+.faq .container .faq__list .faq__item .faq__item-question {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.faq .container .faq__list .faq__item .faq__item-answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq .container .faq__list .faq__item.active::before {
+    rotate: 180deg;
+}
+
+.faq .container .faq__list .faq__item.active .faq__item-answer {
+    max-height: 500px;
+    overflow: hidden;
+    margin-top: 10px;
+}

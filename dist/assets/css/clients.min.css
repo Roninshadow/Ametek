@@ -1,2 +1,78 @@
 @charset "UTF-8";
 /* Стили для страницы clients */
+.clients {
+  padding: 100px 0;
+}
+.clients .container .clients__title {
+  color: #14141e;
+  font-weight: 700;
+  font-size: 24px;
+}
+.clients .container .clients__subtitle {
+  color: #14141e;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #339e61;
+}
+.clients .container .clients__swiper {
+  margin-top: 50px;
+  position: relative;
+}
+.clients .container .clients__swiper .clients__swiper-list {
+  display: flex;
+  gap: 20px;
+}
+.clients .container .clients__swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+.clients .container .clients__swiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  cursor: pointer;
+}
+.clients .container .clients__swiper .clients__swiper-item {
+  background: #ffffff;
+  min-width: 290px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.clients .container .clients__swiper .clients__swiper-item .clients__swiper-item-title {
+  margin: 20px 10px;
+  color: #14141e;
+  font-weight: 400;
+  font-size: 18px;
+}
+.clients .container .clients__swiper .clients__swiper-item .clients__swiper-item-subtitle {
+  margin: 0 10px;
+  margin-bottom: 40px;
+  color: #14141e;
+  font-weight: 400;
+  font-size: 18px;
+  color: #8e8f93;
+}
+.clients .container .clients__container-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.clients .container .clients__container-btn .clients__btn {
+  padding: 12px 25px;
+  background: #339e61;
+  border-radius: 8px;
+  color: #14141e;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+@media (max-width: 375px) {
+  .clients .container .clients__container-btn .clients__btn {
+    padding: 12px 15px;
+  }
+}

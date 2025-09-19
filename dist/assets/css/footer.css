@@ -1,0 +1,58 @@
+.footer {
+    background: #f3fffc;
+    padding: 50px 0;
+}
+
+.footer .container .footer__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer .container .footer__wrapper .footer__logo svg {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer .container .footer__wrapper .footer__navList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer .container .footer__wrapper .footer__navList .footer__navItem {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer .container .footer__wrapper .footer__contacts-list .footer__contacts-item {
+    margin-bottom: 14px;
+}
+
+.footer .container .footer__wrapper .footer__contacts-list .footer__contacts-item-title {
+    color: #14141e;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .container .footer__wrapper .footer__contacts-list .footer__contacts-item-phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .container .footer-moloko {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    background: #046D53;
+    padding: 5px 10px;
+    color: #ffffff;
+}

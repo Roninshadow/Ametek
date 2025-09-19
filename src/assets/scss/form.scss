@@ -1,2 +1,109 @@
 /* Стили для страницы form */
+@use 'variables' as *;
 
+.form {
+	background: $white;
+	padding: 100px 0;
+	.container {
+		.form__title {
+			@include H2-bold;
+			margin-bottom: 10px;
+		}
+		.form__subtitle {
+			@include H3-semibold;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.form__container {
+			display: flex;
+			gap: 70px;
+			margin-top: 50px;
+			align-items: flex-start;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
+			.form__container-form {
+				padding: 40px;
+				background: #e6f7ef;
+				max-width: 500px;
+				border-radius: 10px;
+				@media (max-width: 768px) {
+					max-width: none;
+				}
+			}
+			.form__container-contacts {
+			}
+			.form__container-form-title {
+				@include H4-medium;
+				text-transform: uppercase;
+			}
+			.form__container-form-subtitle {
+				@include H3-semibold;
+				margin-top: 30px;
+			}
+			.form__container-form-form {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+				margin-top: 30px;
+				.form__container-form-form-input {
+					padding: 10px 14px;
+					background: $white;
+					border-radius: 6px;
+				}
+				.form__container-form-form-btn {
+					@include main-btn;
+					&:hover {
+					}
+					&:active {
+					}
+					&:focus {
+					}
+				}
+			}
+			.form__container-form-subtext {
+				@include H8-regular;
+				line-height: 1;
+				margin-top: 30px;
+			}
+			.form__container-contacts-title {
+				@include H4-medium;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			.form__container-contacts-list {
+				.form__container-contacts-item {
+					margin-bottom: 14px;
+				}
+				.form__container-contacts-item-title {
+					@include H4-medium;
+					margin-bottom: 10px;
+				}
+				.form__container-contacts-item-info {
+					@include H5-regular;
+					br {
+					}
+				}
+				.form__container-contacts-item-phone {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					margin-top: 10px;
+					svg {
+					}
+					.form__container-contacts-item-number {
+						&:hover {
+						}
+						&:active {
+						}
+						&:focus {
+						}
+					}
+				}
+			}
+			.form__container-contacts-map {
+				margin-top: 26px;
+			}
+		}
+	}
+}

@@ -1,1 +1,177 @@
 @use 'variables' as *;
+
+.header {
+	.header__1lvl {
+		background: $gray1;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 20px;
+			.header__1lvl-name {
+				@include H5-regular;
+				color: $gray3;
+			}
+			.header__1lvl-contacts {
+				display: flex;
+				gap: 22px;
+			}
+			svg {
+				use {
+				}
+			}
+			.header__1lvl-numbers-list {
+				display: flex;
+				gap: 22px;
+
+				.header__1lvl-number-item {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				.header__1lvl-number-link {
+					@include H5-regular;
+				}
+				.header__1lvl-number-name {
+					@include H5-regular;
+					color: $gray3;
+				}
+			}
+		}
+	}
+	.header__2lvl {
+		background: $white;
+		.container {
+			display: flex;
+			align-items: center;
+			padding: 15px 20px;
+			justify-content: space-between;
+			svg {
+				width: 120px;
+				height: 50px;
+			}
+			.header__2lvl-nav {
+			}
+			.header__2lvl-btn {
+				@include H5-regular;
+				@include main-btn;
+				@media (max-width: 1024px) {
+					display: none;
+				}
+			}
+			div {
+				display: flex;
+				gap: 34px;
+				align-items: center;
+				.header__2lvl-btn-mobile {
+					@include H5-regular;
+					@include main-btn;
+				}
+				svg {
+					cursor: pointer;
+					width: 35px;
+					height: 30px;
+				}
+			}
+
+			.header__2lvl-navList {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				@media (max-width: 1024px) {
+					display: none;
+				}
+				.header__2lvl-navItem {
+					@include H5-regular;
+				}
+			}
+
+			.header__burger {
+				position: fixed;
+				top: 80px;
+				left: 0;
+				right: 0;
+				margin: 0;
+				background: $gray1;
+				padding: 50px 20px;
+				width: 100vw;
+				z-index: 100000000000;
+				&::backdrop {
+					background: none;
+				}
+				div {
+					display: flex;
+					flex-direction: column;
+					align-items: start;
+					gap: 50px;
+					.header__2lvl-nav {
+						.header__2lvl-navList {
+							display: flex;
+							flex-direction: column;
+							align-items: start;
+							.header__2lvl-navItem {
+							}
+							.header__2lvl-navItem-link {
+								@include H4-medium;
+								text-transform: uppercase;
+							}
+						}
+					}
+					div {
+						display: flex;
+						flex-direction: column;
+						align-items: start;
+						gap: 20px;
+						.header__burger-phoneContainer {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							gap: 10px;
+						}
+						.header__burger-phone {
+						}
+						svg {
+							width: 40px;
+						}
+					}
+					.header__1lvl-numbers-list {
+						display: flex;
+						flex-direction: column;
+						gap: 20px;
+						.header__1lvl-number-item {
+						}
+						.header__1lvl-number-link {
+						}
+						.header__1lvl-number-name {
+							@include H5-regular;
+							color: $gray3;
+						}
+					}
+				}
+				.header__1lvl-name {
+					@include H5-regular;
+					color: $gray3;
+					br {
+					}
+				}
+				.header__burger-buttons {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					.header__burger-btn.commerce {
+						@include main-btn;
+					}
+					.header__burger-btn.consult {
+						background: $gray2;
+						padding: 12px 15px;
+						border-radius: 8px;
+						width: 100%;
+						@include H5-regular;
+					}
+				}
+			}
+		}
+	}
+}

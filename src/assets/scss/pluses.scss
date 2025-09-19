@@ -1,2 +1,83 @@
 /* Стили для страницы pluses */
+@use 'variables' as *;
 
+.pluses {
+	padding: 50px 0;
+	.container {
+		.pluses__title {
+			@include H2-bold;
+			margin-bottom: 10px;
+		}
+		.pluses__subtitle {
+			padding-bottom: 14px;
+			@include H3-semibold;
+			border-bottom: 1px solid $green;
+		}
+		.pluses__list {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin: 50px 0;
+			counter-reset: pluses;
+			gap: 20px;
+			@media (max-width: 768px) {
+				display: flex;
+				gap: 0;
+			}
+			.pluses__item {
+				padding: 30px 20px;
+				padding-left: 76px;
+				background: $white;
+				position: relative;
+				border-radius: 3px;
+				min-height: 216px;
+				transition: 0.2s;
+				@media (max-width: 768px) {
+					min-width: 320px;
+					text-align: left;
+				}
+				&::before {
+					content: counter(pluses);
+					counter-increment: pluses;
+					background: rgba(#00a759, $alpha: 0.1);
+					color: $green;
+					padding: 7px 14px;
+					border-radius: 100px;
+					top: 30px;
+					left: 20px;
+					position: absolute;
+					transition: 0.2s;
+				}
+				&:hover {
+					-webkit-box-shadow: 0px 0px 22px 0px rgba(34, 60, 80, 0.2);
+					-moz-box-shadow: 0px 0px 22px 0px rgba(34, 60, 80, 0.2);
+					box-shadow: 0px 0px 22px 0px rgba(34, 60, 80, 0.2);
+					&::before {
+						background: $green;
+						color: $white;
+					}
+				}
+			}
+			.pluses__item-title {
+				@include H6-medium;
+				text-transform: uppercase;
+				margin-bottom: 16px;
+			}
+			.pluses__item-text {
+				@include H6-light;
+			}
+		}
+		div {
+			text-align: center;
+			.pluses__btn {
+				@include main-btn;
+
+				&:hover {
+				}
+				&:active {
+				}
+				&:focus {
+				}
+			}
+		}
+	}
+}

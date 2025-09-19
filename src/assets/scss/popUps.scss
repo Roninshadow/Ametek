@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+.popUp {
+	background: $white;
+	border-radius: 16px;
+	position: relative;
+	padding: 60px 70px;
+	max-width: 600px;
+	&__cross {
+		position: absolute;
+		top: 60px;
+		right: 60px;
+		use {
+		}
+	}
+	&__title {
+		text-align: center;
+		margin-top: 34px;
+		@include H2-bold;
+		text-transform: uppercase;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		margin-top: 40px;
+		.popUp__form-input {
+			background: $gray1;
+			padding: 10px 14px;
+			width: 100%;
+			border-radius: 6px;
+		}
+		.popUp__form-btn {
+			@include main-btn;
+			margin-top: 30px;
+			&:hover {
+			}
+			&:active {
+			}
+			&:focus {
+			}
+		}
+	}
+	&__form-subtext {
+		@include H8-regular;
+		line-height: 1;
+		margin-top: 10px;
+	}
+	.popUp__btn {
+		@include main-btn;
+		width: 100%;
+		margin-top: 40px;
+	}
+}

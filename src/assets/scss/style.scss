@@ -1,36 +1,65 @@
 @use 'variables' as *;
 @use 'sass:meta';
 @use 'reset';
+
 body {
 	line-height: 1;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	line-height: 140%;
+	background: $gray1;
+	 overflow-x: hidden;
+}
+dialog::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+	animation: fade 0.2s ease;
+}
+
+/* Центрирование содержимого */
+dialog[open] {
+	animation: slideUp 0.2s ease-out;
+	margin: auto;
+	position: fixed;
+	inset: 0;
+	display: grid;
+	place-items: center;
 }
 .scroll-block {
 	overflow: hidden;
 }
 .container {
-	max-width: calc(1110px + 20px * 2);
+	max-width: calc(1264px + 20px * 2);
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 0 20px;
 }
-h1 {
-	font-size: 32px;
-	font-weight: 700;
-	@media (max-width: 480px) {
-		font-size: 24px;
-	}
+.popUp__cross {
+	cursor: pointer;
 }
-h2 {
-	font-size: 40px;
-	font-weight: 700;
-	@media (max-width: 480px) {
-		font-size: 22px;
-	}
+.swiper-button-next {
+	z-index: 100000;
 }
-
+.swiper-button-prev {
+	z-index: 10000000;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+img {
+	object-fit: contain;
+}
 @include meta.load-css('footer');
 @include meta.load-css('header');
 @include meta.load-css('hero');
-
+@include meta.load-css('about');
+@include meta.load-css('approach');
+@include meta.load-css('bonus');
+@include meta.load-css('clients');
+@include meta.load-css('equipment');
+@include meta.load-css('faq');
+@include meta.load-css('form');
+@include meta.load-css('pluses');
+@include meta.load-css('product');
+@include meta.load-css('projets');
+@include meta.load-css('decision');
+@include meta.load-css('popUps');

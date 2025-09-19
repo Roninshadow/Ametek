@@ -1,2 +1,65 @@
 /* Стили для страницы clients */
+@use 'variables' as *;
 
+.clients {
+	padding: 100px 0;
+	.container {
+		.clients__title {
+			@include H2-bold;
+		}
+		.clients__subtitle {
+			@include H3-semibold;
+			margin-top: 10px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid $green;
+		}
+		.clients__swiper {
+			margin-top: 50px;
+			position: relative;
+			.clients__swiper-list {
+				display: flex;
+				gap: 20px;
+			}
+			.swiper-button-next {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+				cursor: pointer;
+			}
+			.swiper-button-prev {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				cursor: pointer;
+			}
+			.clients__swiper-item {
+				background: $white;
+				min-width: 290px;
+				border-radius: 8px;
+				overflow: hidden;
+				.clients__swiper-item-image {
+				}
+				.clients__swiper-item-title {
+					margin: 20px 10px;
+					@include H4-regular;
+				}
+				.clients__swiper-item-subtitle {
+					margin: 0 10px;
+					margin-bottom: 40px;
+					@include H4-regular;
+					color: $gray3;
+				}
+			}
+		}
+
+		.clients__container-btn {
+			text-align: center;
+			margin-top: 50px;
+			.clients__btn {
+				@include main-btn;
+			}
+		}
+	}
+}

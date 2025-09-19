@@ -3,12 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="assets/css/style.min.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<!-- Useful meta tags -->
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -20,13 +17,15 @@
 	</head>
 	<body>
 		<header class="header">
-	<div class="container">
-		<div class="header__1lvl">
+	<div class="header__1lvl">
+		<div class="container">
 			<p class="header__1lvl-name">Индустриальный Парк “Элма-Мытищи”</p>
 			<div class="header__1lvl-contacts">
-				<svg width="40" height="40">
-					<use xlink:href="assets/svg/sprite.svg#icon-whatsapp"></use>
-				</svg>
+				<a href="">
+					<svg width="40" height="40">
+						<use xlink:href="assets/svg/sprite.svg#icon-whatsapp"></use>
+					</svg>
+				</a>
 				<ul class="header__1lvl-numbers-list">
 					<li class="header__1lvl-number-item">
 						<a href="tel:88003336998" class="header__1lvl-number-link">8(800) 333-69-98</a>
@@ -43,21 +42,75 @@
 				</ul>
 			</div>
 		</div>
-		<div class="header__2lvl">
+	</div>
+	<div class="header__2lvl">
+		<div class="container">
 			<svg width="40" height="40">
 				<use xlink:href="assets/svg/sprite.svg#icon-logo"></use>
 			</svg>
-      <nav class="header__2lvl-nav">
-        <ul class="header__2lvl-navList">
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Главная</a></li>
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">О компании</a></li>
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Продукты и услуги</a></li>
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Проекты</a></li>
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Вопросы</a></li>
-          <li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="header__2lvl-btn">Контакты</button>
+			<nav class="header__2lvl-nav">
+				<ul class="header__2lvl-navList">
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Главная</a></li>
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">О компании</a></li>
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Продукты и услуги</a></li>
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Проекты</a></li>
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Вопросы</a></li>
+					<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Контакты</a></li>
+				</ul>
+			</nav>
+			<button class="header__2lvl-btn commerce">Получить коммерческое предложение</button>
+			<div>
+				<a href="" class="header__2lvl-btn-mobile">Позвонить</a>
+				<svg class="burgerBtnOpen" width="40" height="40">
+					<use xlink:href="assets/svg/sprite.svg#icon-burger-btn"></use>
+				</svg>
+			</div>
+			<dialog class="header__burger">
+				<div>
+					<nav class="header__2lvl-nav">
+						<ul class="header__2lvl-navList">
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Главная</a></li>
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">О компании</a></li>
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Продукты и услуги</a></li>
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Проекты</a></li>
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Вопросы</a></li>
+							<li class="header__2lvl-navItem"><a href="" class="header__2lvl-navItem-link">Контакты</a></li>
+						</ul>
+					</nav>
+					<div>
+						<div class="header__burger-phoneContainer">
+							<a href="">
+								<svg width="40" height="40">
+									<use xlink:href="assets/svg/sprite.svg#icon-whatsapp"></use>
+								</svg>
+							</a>
+							<a href="" class="header__burger-phone">8(993) 711-68-88</a>
+						</div>
+						<ul class="header__1lvl-numbers-list">
+							<li class="header__1lvl-number-item">
+								<a href="tel:88003336998" class="header__1lvl-number-link">8(800) 333-69-98</a>
+								<p class="header__1lvl-number-name">бесплатный звонок</p>
+							</li>
+							<li class="header__1lvl-number-item">
+								<a href="tel:+74951876998 " class="header__1lvl-number-link">+7(495) 187-69-98 </a>
+								<p class="header__1lvl-number-name">отдел продаж</p>
+							</li>
+							<li class="header__1lvl-number-item">
+								<a href="mailto:info@oik-amtek.ru" class="header__1lvl-number-link">info@oik-amtek.ru</a>
+								<p class="header__1lvl-number-name">электронная почта</p>
+							</li>
+						</ul>
+					</div>
+					<p class="header__1lvl-name">
+						Индустриальный Парк «ЭЛМА- МЫТИЩИ»<br />
+						МО, г. Мытищи ул. Силикатная 19 офис 207
+					</p>
+					<div class="header__burger-buttons">
+						<button class="header__burger-btn commerce">Получить коммерческое предложение</button>
+						<button class="header__burger-btn consult">Запросить консультацию</button>
+					</div>
+				</div>
+			</dialog>
 		</div>
 	</div>
 </header>
@@ -67,13 +120,960 @@
 		<h5 class="hero__subtitle">Сократите бюджет и сроки вашего проекта выбрав нас.</h5>
 		<h5 class="hero__subtitle">Всё необходимое инженерное оборудование и сервисы от одного подрядчика.</h5>
 		<div class="hero__buttons">
-			<button class="hero__buttons-commerceBtn">Получить коммерческое предложение</button>
-			<button class="hero__buttons-consultBtn">Запросить консультацию</button>
+			<button class="hero__buttons-commerceBtn commerce">Получить коммерческое предложение</button>
+			<button class="hero__buttons-consultBtn consult">Запросить консультацию</button>
 		</div>
 	</div>
 </section>
- 
+<section class="pluses">
+	<div class="container">
+		<h2 class="pluses__title">Наши преимущества</h2>
+		<h3 class="pluses__subtitle">Почему нам доверяют крупные строительные компании?</h3>
+		<div class="pluses__swiper swiper">
+			<ul class="pluses__list swiper-wrapper">
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Комплексные решения "под ключ"</h6>
+					<h6 class="pluses__item-text">
+						Мы берём на себя все этапы — от проектирования до монтажа внутренних и наружных инженерных сетей, электрощитового оборудования, комплексными решениями по автоматизации и диспетчеризации,
+						освобождая вас от необходимости взаимодействия с несколькими подрядчиками и снижая риски задержек
+					</h6>
+				</li>
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Гарантия соблюдения сроков</h6>
+					<h6 class="pluses__item-text">98% наших проектов сдаются точно в срок благодаря отлаженной логистике и управлению проектами</h6>
+				</li>
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Высокое качество оборудования</h6>
+					<h6 class="pluses__item-text">Сертифицированная продукция от ведущих производителей, соответствующая международным стандартам ISO и ГОСТ</h6>
+				</li>
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Прозрачные и конкурентоспособные цены</h6>
+					<h6 class="pluses__item-text">Снижение затрат заказчиков в среднем на 20% благодаря оптимизации процессов и отсутствию скрытых расходов</h6>
+				</li>
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Техническая поддержка 24/7</h6>
+					<h6 class="pluses__item-text">Круглосуточная поддержка и оперативное решение любых технических вопросов в течение 2 часов</h6>
+				</li>
+				<li class="pluses__item swiper-slide">
+					<h6 class="pluses__item-title">Полный ассортимент материалов</h6>
+					<h6 class="pluses__item-text">Более 10 000 наименований оборудования и материалов в наличии</h6>
+				</li>
+			</ul>
+		</div>
+    <div>
+			<button class="pluses__btn consult">Связаться с нами</button>
+		</div>
+	</div>
+</section>
+<section class="about">
+  <div class="container">
+    <h2 class="about__title">О компании</h2>
+    <div class="about__flex">
+      <ul class="about__list">
+        <li class="about__item">
+          <h4 class="about__item-title">ОИК АМТЕК</h4>
+          <h5 class="about__item-text">Объединенная инженерно-производственная компания, предоставляющая полный спектр услуг в  проектировании, строительстве внутренних и наружных инженерных сетей, производстве электрощитового оборудования, пусконаладки с последующим монтажом и техническим сопровождением, инженерному оснащению, системам автоматизации для объектов промышленного назначения, гражданской и коммерческой недвижимости, центров обработки данных (ЦОД), а также в области проектов силовой энергетики.</h5>
+        </li>
+        <li class="about__item">
+          <h4 class="about__item-title">Наша миссия </h4>
+          <h5 class="about__item-text">Мы помогаем нашим клиентам повысить эффективность бизнес процессов и укрепить конкурентоспособность на рынке и понимаем, что успешное решение задач наших клиентов требует не только надежного оборудования, но и индивидуального подхода к каждому проекту.</h5>
+        </li>
+        <li class="about__item">
+          <h4 class="about__item-title">Решения под ключ</h4>
+          <h5 class="about__item-text">Благодаря профессиональной команде экспертов и инженеров, мы обеспечиваем полный цикл обслуживания от консультаций и проектирования до производства высококачественного оборудования и поставки материалов, монтажа и технического обслуживания.</h5>
+        </li>
+        <li class="about__item">
+          <h4 class="about__item-title">Собственное производство</h4>
+          <h5 class="about__item-text">Собственное производство, полный ассортимент продукции и услуг, давние отношения с вендорами позволяют нам реализовать проекты любой сложности и масштаба, качественно и в срок.</h5>
+        </li>
+        <button class="about__list-btn">Раскрыть</button>
+      </ul>
+      <img src="../assets/images/about-image.jpg" alt="" class="about__image">
+    </div>
+    <ul class="about__subPluses">
+      <li class="about__subPlus">
+        <p class="about__subplus-title">25 лет</p>
+        <h5 class="about__subPlus-name">в отрасли</h5>
+      </li>
+      <li class="about__subPlus">
+        <p class="about__subplus-title">6000 +</p>
+        <h5 class="about__subPlus-name">Реализованных проектов</h5>
+      </li>
+    </ul>
+  </div>
+</section><section class="approach">
+	<div class="container">
+		<h2 class="approach__title">Комплексный подход в создании инженерной инфраструктуры</h2>
+		<h3 class="approach__subtitle">
+			Производим оборудование. Выполняем работы. <br />
+			Обеспечиваем поставки для инженерных коммуникаций
+		</h3>
+		<div class="swiper approach-swiper">
+			<ul class="swiper-wrapper approach__list">
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+				<li class="approach__item swiper-slide">
+					<div class="approach__item-content">
+						<h5 class="approach__item-title">Производство электрощитового оборудования. ИБП и ДГУ</h5>
+						<h6 class="approach__item-text">
+							Современные решения для эффективного распределения электроэнергии в жилых, коммерческих и промышленных
+							объектах. Снижение энергопотерь до 15%
+						</h6>
+						<button class="approach__item-btn consult">Оставить заявку</button>
+					</div>
+					<img src="../assets/images/approach.jpg" alt="" class="approach__item-image" />
+				</li>
+			</ul>
+		</ class="swiper">
+	</div>
+</section>
+<section class="product">
+  <div class="container">
+    <h2 class="product__title">Выпускаемая продукция</h2>
+    <div class="swiper product__swiper">
+      <ul class="swiper-wrapper product__list">
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+        <li class="product__item swiper-slide">
+          <img src="../assets/images/product-image.jpg" alt="" class="product__item-image">
+          <h5 class="product__item-title">ГРЩ - Главные распределительные щиты</h5>
+          <button class="product__item-btn consult">Оставить заявку</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section><section class="decision">
+	<div class="container">
+		<h2 class="decision__title">Решения для разных отраслей</h2>
+		<h3 class="decision__subtitle">Индивидуальный подход для каждого клиента</h3>
+		<div class="decision__content">
+			<div class="tabs__swiper swiper">
+				<ul class="swiper-wrapper decision__content-tabs">
+					<li class="swiper-slide decision__content-tab active">Застройщики и генеральные подрядчики ЖК</li>
+					<li class="swiper-slide decision__content-tab">Частный сектор</li>
+					<li class="swiper-slide decision__content-tab">Генеральные директора строительных компаний</li>
+					<li class="swiper-slide decision__content-tab">Промышленные объекты</li>
+					<li class="swiper-slide decision__content-tab">Субподрядчики строительных проектов</li>
+					<li class="swiper-slide decision__content-tab">Директора тендерных отделов</li>
+					<li class="swiper-slide decision__content-tab">Снабженцы строительных компаний</li>
+					<li class="swiper-slide decision__content-tab">Энергетики</li>
+				</ul>
+			</div>
+			<ul class="decision__content-blocks">
+				<li class="decision__content-block active">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Застройщики и генеральные подрядчики ЖК</h5>
+						<h6 class="decision__content-text-subtitle">
+							"Оптимизируйте процесс строительства и сократите сроки сдачи объектов на 15% с нашим комплексным
+							подходом."<br /><br />
+							Обеспечьте комфорт и безопасность жителей вашего строящегося жилого дома с нашими современными системами
+							электроснабжения и инженерными решениями
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Частный сектор</h5>
+						<h6 class="decision__content-text-subtitle">
+							Обеспечьте комфорт и безопасность жителей вашего поселка с нашими современными системами электроснабжения,
+							умными технологиями и инженерными решениями.Оптимизируйте работу, сократите издержки и создайте
+							дополнительные источники дохода.Умные технологии повышают качество услуг и помогают вам зарабатывать
+							больше.Управляющие и сервисные компании Получение лидов на обслуживание и ремонт инженерных систем.
+							Возможность предоставлять дополнительные услуги жильцам через экосистему ОИК АМТЕК. Девелоперам и
+							производителям домов Повышение стоимости объектов за счёт интеграции умных технологий и современных
+							инженерных решений. Прямой доступ к решениям для автоматизации поселков.
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-1.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Генеральные директора строительных компаний</h5>
+						<h6 class="decision__content-text-subtitle">
+							Упростите управление проектами и снизьте риски с нашим комплексным предложением и прозрачными условиями
+							сотрудничества
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-2.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Промышленные объекты</h5>
+						<h6 class="decision__content-text-subtitle">
+							Максимизируйте эффективность производства и снизьте простои до 0% с нашими надежными энергетическими
+							решениями
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-3.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Субподрядчики строительных проектов</h5>
+						<h6 class="decision__content-text-subtitle">
+							Ускорьте выполнение работ на 20% с нашим оперативным снабжением и технической поддержкой
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-4.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Директора тендерных отделов</h5>
+						<h6 class="decision__content-text-subtitle">
+							Выигрывайте тендеры с нашей безупречной документацией и конкурентными предложениями. Увеличение
+							вероятности победы на 30%
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-5.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Снабженцы строительных компаний</h5>
+						<h6 class="decision__content-text-subtitle">
+							Получайте всё необходимое оборудование вовремя и по выгодным ценам. Сокращение времени на закупки на 50%
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-6.jpg" alt="" class="decision__content-image" />
+				</li>
+				<li class="decision__content-block">
+					<div class="decision__content-text">
+						<h5 class="decision__content-text-title">Энергетики</h5>
+						<h6 class="decision__content-text-subtitle">
+							Обновите ваши энергетические системы с современным оборудованием и сократите эксплуатационные расходы на
+							25%
+						</h6>
+						<button class="decision__content-btn consult">Решения для застройщиков</button>
+					</div>
+					<img src="../assets/images/image-7.jpg" alt="" class="decision__content-image" />
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="equipment">
+	<div class="container">
+		<h2 class="equipment__title">Наше оборудование и технологии</h2>
+		<h3 class="equipment__subtitle">Качество и инновации в каждом решении</h3>
+		<h4 class="equipment__text">
+			Мы сотрудничаем с ведущими мировыми и отечественными производителями, обеспечивая доступ к новейшим технологиям и
+			высокому качеству оборудования
+		</h4>
+		<div class="swiper equipment__tech">
+			<ul class="swiper-wrapper equipment__techList">
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+				<li class="equipment__techItem swiper-slide">
+					<img src="../assets/images/tech-image.png" alt="" class="equipment__techItem-image" />
+				</li>
+			</ul>
+			<div class="swiper-button-next">
+				<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" fill="white"/>
+<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" stroke="#E8E9ED"/>
+<path d="M18.5 15.8926L25.5 22.8926L18.5 29.8926" stroke="#DD2B1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+				</svg>
+
+			</div>
+			<div class="swiper-button-prev">
+				<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<rect x="-0.5" y="0.5" width="43" height="43" rx="21.5" transform="matrix(-1 0 0 1 43 0.892578)" fill="white"/>
+<rect x="-0.5" y="0.5" width="43" height="43" rx="21.5" transform="matrix(-1 0 0 1 43 0.892578)" stroke="#E8E9ED"/>
+<path d="M25.5 15.8926L18.5 22.8926L25.5 29.8926" stroke="#DD2B1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bonus">
+  <div class="container">
+    <div class="bonus__content">
+      <h2 class="bonus__content-title">Получи бонус за размещение заказа</h2>
+      <p class="bonus__content-subtitle">На первый заказ для всех новых клиентов<br> действует предложение на выбор</p>
+      <ul class="bonus__content-options">
+        <li class="bonus__content-option">5% постоянная скидка на все последующие заказы</li>
+        <li class="bonus__content-option">2% кэшбек на карту</li>
+      </ul>
+      <form action="" class="bonus__content-form">
+        <input type="text" class="bonus__content-form-input" placeholder="Имя, компания">
+        <input type="text" class="bonus__content-form-input" placeholder="Номер телефона">
+        <button class="bonus__content-form-btn">Получить предложение</button>
+      </form>
+    </div>
+    <img src="../assets/images/bonus-image.jpg" alt="" class="bonus__image">
+  </div>
+</section><section class="clients">
+	<div class="container">
+		<h2 class="clients__title">Наши клиенты и партнеры</h2>
+		<h3 class="clients__subtitle">Нам доверяют лидеры отрасли</h3>
+		<div class="swiper clients__swiper">
+			<ul class="swiper-wrapper clients__swiper-list">
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+				<li class="clients__swiper-item swiper-slide">
+					<img src="../assets/images/clients.jpg" alt="" class="clients__swiper-item-image" />
+					<h4 class="clients__swiper-item-title">АО «Корпорация»</h4>
+					<h4 class="clients__swiper-item-subtitle">«Тактическое ракетное вооружение»</h4>
+				</li>
+			</ul>
+			<div class="swiper-button-next">
+        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" fill="white"/>
+<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" stroke="#E8E9ED"/>
+<path d="M18.5 15.8926L25.5 22.8926L18.5 29.8926" stroke="#DD2B1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+        </svg>
+      </div>
+			<div class="swiper-button-prev">
+        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<rect x="-0.5" y="0.5" width="43" height="43" rx="21.5" transform="matrix(-1 0 0 1 43 0.892578)" fill="white"/>
+<rect x="-0.5" y="0.5" width="43" height="43" rx="21.5" transform="matrix(-1 0 0 1 43 0.892578)" stroke="#E8E9ED"/>
+<path d="M25.5 15.8926L18.5 22.8926L25.5 29.8926" stroke="#DD2B1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+        </svg>
+      </div>
+		</div>
+		<div class="clients__container-btn">
+      <button class="clients__btn consult">Связаться с нами</button>
+    </div>
+	</div>
+</section>
+<section class="projets">
+	<div class="container">
+		<h2 class="projets__title">Реализованные проекты</h2>
+		<h3 class="projets__subtitle">Наши успешные проекты — ваши гарантии!</h3>
+		<div class="swiper projets__swiper">
+			<ul class="swiper-wrapper projets__swiper-list">
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+				<li class="projets__swiper-item swiper-slide">
+					<ul class="projets__swiper-item-content">
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Проект:</h5>
+							<h3 class="projets__swiper-item-contentItem-type">ЖКХ</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Локация:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">г. Липецк, Водоканал</h3>
+						</li>
+						<li class="projets__swiper-item-contentItem">
+							<h5 class="projets__swiper-item-contentItem-title">Вид:</h5>
+							<h3 class="projets__swiper-item-contentItem-text">
+								Разработка и производство<br />
+								МУП "Липецкая станция аэрации" реконструкция очистных сооружений (биологическая очитка). ШУ насосной
+								станцией циркуляции активного ила 5 секций с ПЧТ ACS550 (75 kW) + ШУ
+							</h3>
+						</li>
+					</ul>
+					<img src="../assets/images/projects.jpg" alt="" class="projets__swiper-item-image" />
+				</li>
+			</ul>
+			<div class="swiper-button-next">
+				<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.8">
+						<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" fill="white" />
+						<rect x="0.5" y="1.39258" width="43" height="43" rx="21.5" stroke="#E8E9ED" />
+						<path
+							d="M18.5 15.8926L25.5 22.8926L18.5 29.8926"
+							stroke="#DD2B1C"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</g>
+				</svg>
+			</div>
+			<div class="swiper-button-prev">
+				<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.8">
+						<rect
+							x="-0.5"
+							y="0.5"
+							width="43"
+							height="43"
+							rx="21.5"
+							transform="matrix(-1 0 0 1 43 0.892578)"
+							fill="white"
+						/>
+						<rect
+							x="-0.5"
+							y="0.5"
+							width="43"
+							height="43"
+							rx="21.5"
+							transform="matrix(-1 0 0 1 43 0.892578)"
+							stroke="#E8E9ED"
+						/>
+						<path
+							d="M25.5 15.8926L18.5 22.8926L25.5 29.8926"
+							stroke="#DD2B1C"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</g>
+				</svg>
+			</div>
+		</div>
+    <div class="projets__container-btn">
+      <button class="projets__btn reference">Запросить полный референс лист</button>
+    </div>
+	</div>
+</section>
+<section class="faq">
+  <div class="container">
+    <h2 class="faq__title">Часто задаваемые вопросы</h2>
+    <h3 class="faq__subtitle">Ответы на ваши вопросы </h3>
+    <ul class="faq__list">
+      <li class="faq__item active">
+        <p class="faq__item-question">Как быстро вы можете поставить оборудование?</p>
+        <p class="faq__item-answer">Благодаря собственным складам и отлаженной логистике, мы осуществляем поставки в течение 3-7 дней.Сроки подсчетов проекта инженерами  - от 3 дней, сроки производства - от 7 дней, в зависимости от сложности проекта В случае индивидуальных заказов сроки обсуждаются отдельно</p>
+      </li>
+      <li class="faq__item">
+        <p class="faq__item-question">Есть ли у вас опыт работы с крупными промышленными предприятиями?</p>
+        <p class="faq__item-answer">Благодаря собственным складам и отлаженной логистике, мы осуществляем поставки в течение 3-7 дней.Сроки подсчетов проекта инженерами  - от 3 дней, сроки производства - от 7 дней, в зависимости от сложности проекта В случае индивидуальных заказов сроки обсуждаются отдельно</p>
+      </li>
+      <li class="faq__item">
+        <p class="faq__item-question">Предоставляете ли вы гарантию на оборудование?</p>
+        <p class="faq__item-answer">Благодаря собственным складам и отлаженной логистике, мы осуществляем поставки в течение 3-7 дней.Сроки подсчетов проекта инженерами  - от 3 дней, сроки производства - от 7 дней, в зависимости от сложности проекта В случае индивидуальных заказов сроки обсуждаются отдельно</p>
+      </li>
+      <li class="faq__item">
+        <p class="faq__item-question">Можете ли вы помочь с подготовкой тендерной документации?</p>
+        <p class="faq__item-answer">Благодаря собственным складам и отлаженной логистике, мы осуществляем поставки в течение 3-7 дней.Сроки подсчетов проекта инженерами  - от 3 дней, сроки производства - от 7 дней, в зависимости от сложности проекта В случае индивидуальных заказов сроки обсуждаются отдельно</p>
+      </li>
+      <li class="faq__item">
+        <p class="faq__item-question">Есть ли у вас опыт работы с крупными промышленными предприятиями?</p>
+        <p class="faq__item-answer">Благодаря собственным складам и отлаженной логистике, мы осуществляем поставки в течение 3-7 дней.Сроки подсчетов проекта инженерами  - от 3 дней, сроки производства - от 7 дней, в зависимости от сложности проекта В случае индивидуальных заказов сроки обсуждаются отдельно</p>
+      </li>
+    </ul>
+  </div>
+</section><section class="form">
+	<div class="container">
+		<h2 class="form__title">Свяжитесь с нами</h2>
+		<h3 class="form__subtitle">Готовы обсудить ваш проект прямо сейчас</h3>
+		<div class="form__container">
+			<div class="form__container-form">
+				<h4 class="form__container-form-title">Оставить заявку</h4>
+				<h3 class="form__container-form-subtitle">
+					Заполните поля ниже и мы перезвоним вам в ближайшее время для уточнения деталей
+				</h3>
+				<form action="" class="form__container-form-form">
+					<input type="text" class="form__container-form-form-input" placeholder="Имя"/>
+					<input type="text" class="form__container-form-form-input" placeholder="Название компании"/>
+					<input type="email" class="form__container-form-form-input" placeholder="Электронная почта"/>
+					<input type="text" class="form__container-form-form-input" placeholder="+7"/>
+					<button class="form__container-form-form-btn">Отправить заявку</button>
+				</form>
+				<p class="form__container-form-subtext">
+					Нажимая кнопку я соглашаюсь с обработкой персональных данныхи политикой конфиденциальности
+				</p>
+			</div>
+			<div class="form__container-contacts">
+				<h4 class="form__container-contacts-title">Контакты</h4>
+				<ul class="form__container-contacts-list">
+					<li class="form__container-contacts-item">
+						<h4 class="form__container-contacts-item-title">ОТДЕЛ ПРОДАЖ:</h4>
+						<h5 class="form__container-contacts-item-info">
+							Индустриальный Парк «ЭЛМА- МЫТИЩИ» <br>
+              МО, г. Мытищи ул. Силикатная 19 офис 207 <br>
+              Тел: 8(800) 333-69-98 -(бесплатный звонок) <br>
+              Тел: +7(495) 187-69-98 - отдел продаж <br>
+              Е-mail: info@oik-amtek.ru
+						</h5>
+						<div class="form__container-contacts-item-phone">
+							<svg width="40" height="40">
+								<use xlink:href="assets/svg/sprite.svg#icon-whatsapp-gray"></use>
+							</svg>
+							<a href="tel:+79937116888" class="form__container-contacts-item-number">+7(993) 711-68-88</a>
+						</div>
+					</li>
+					<li class="form__container-contacts-item">
+						<h4 class="form__container-contacts-item-title">Производство электрощитового оборудования:</h4>
+						<h5 class="form__container-contacts-item-info">г. Москва, Электролитный проезд, 3с8</h5>
+					</li>
+					<li class="form__container-contacts-item">
+						<h4 class="form__container-contacts-item-title">Производственная база</h4>
+						<h5 class="form__container-contacts-item-info">
+              МО, дер, Поярково, ул. Клушинская, стр. 7 <br>
+              ПН-ЧТ: 09.00-18:00 <br>
+              ПТ: 09:00-17:00 <br>
+              сб-вс выходной
+            </h5>
+					</li>
+				</ul>
+        <img src="../assets/images/map.jpg" alt="" class="form__container-contacts-map">
+			</div>
+		</div>
+	</div>
+</section>
+<dialog class="popUp__commerce popUp">
+	<svg width="24" height="24" class="popUp__cross">
+		<use xlink:href="assets/svg/sprite.svg#icon-cross"></use>
+	</svg>
+	<h2 class="popUp__title">
+		Куда вам прислать<br />
+		коммерческое предложение?
+	</h2>
+	<form action="" class="popUp__form">
+		<input type="text" class="popUp__form-input" placeholder="Имя, компания" />
+		<input type="text" class="popUp__form-input" placeholder="+7" />
+		<input type="text" class="popUp__form-input" placeholder="Электронная почта" />
+		<button class="popUp__form-btn popUp__btn">Отправить</button>
+	</form>
+	<p class="popUp__form-subtext">
+		Нажимая кнопку я соглашаюсь с обработкой персональных данныхи политикой конфиденциальности
+	</p>
+</dialog>
+<dialog class="popUp__connection popUp">
+	<svg width="24" height="24" class="popUp__cross">
+		<use xlink:href="assets/svg/sprite.svg#icon-cross"></use>
+	</svg>
+	<h2 class="popUp__title">Как с вами связаться?</h2>
+	<form action="" class="popUp__form">
+		<input type="text" class="popUp__form-input" placeholder="Имя, компания" />
+		<input type="text" class="popUp__form-input" placeholder="+7" />
+		<input type="text" class="popUp__form-input" placeholder="Электронная почта" />
+		<button class="popUp__form-btn popUp__btn">Отправить</button>
+	</form>
+	<p class="popUp__form-subtext">
+		Нажимая кнопку я соглашаюсь с обработкой персональных данныхи политикой конфиденциальности
+	</p>
+</dialog>
+<dialog class="popUp__reference popUp">
+	<svg width="24" height="24" class="popUp__cross">
+		<use xlink:href="assets/svg/sprite.svg#icon-cross"></use>
+	</svg>
+	<h2 class="popUp__title">
+		Куда вам прислать<br />
+		Референс лист?
+	</h2>
+	<form action="" class="popUp__form">
+		<input type="text" class="popUp__form-input" placeholder="Имя, компания" />
+		<input type="text" class="popUp__form-input" placeholder="+7" />
+		<input type="text" class="popUp__form-input" placeholder="Электронная почта" />
+		<button class="popUp__form-btn popUp__btn">Отправить</button>
+	</form>
+	<p class="popUp__form-subtext">
+		Нажимая кнопку я соглашаюсь с обработкой персональных данныхи политикой конфиденциальности
+	</p>
+</dialog>
+<dialog class="popUp__thank popUp">
+	<h2 class="popUp__title">Спасибо за обращение</h2>
+	<button class="popUp__btn">На главную</button>
+</dialog>
+
+
+ <footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__logo">
+				<svg width="40" height="40">
+					<use xlink:href="assets/svg/sprite.svg#icon-logo"></use>
+				</svg>
+				<h4 class="footer__logo-rights">2025 © Все права защищены</h4>
+			</div>
+			<ul class="footer__navList">
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">О компании</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Продукты и услуги</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Проекты</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Статьи</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Контакты</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Политика конфиденциальности</a></li>
+				<li class="footer__navItem"><a href="" class="footer__navItem-link">Партнерство и сотрудничество</a></li>
+			</ul>
+			<div class="footer__contacts">
+				<ul class="footer__contacts-list">
+					<li class="footer__contacts-item">
+						<h4 class="footer__contacts-item-title">ОТДЕЛ ПРОДАЖ:</h4>
+						<h5 class="footer__contacts-item-info">
+							Индустриальный Парк «ЭЛМА- МЫТИЩИ» <br />
+							МО, г. Мытищи ул. Силикатная 19 офис 207 <br />
+							Тел: 8(800) 333-69-98 -(бесплатный звонок) <br />
+							Тел: +7(495) 187-69-98 - отдел продаж <br />
+							Е-mail: info@oik-amtek.ru
+						</h5>
+						<div class="footer__contacts-item-phone">
+							<svg width="40" height="40">
+								<use xlink:href="assets/svg/sprite.svg#icon-whatsapp-gray"></use>
+							</svg>
+							<a href="tel:+79937116888" class="footer__contacts-item-number">+7(993) 711-68-88</a>
+						</div>
+					</li>
+					<li class="footer__contacts-item">
+						<h4 class="footer__contacts-item-title">Производство электрощитового оборудования:</h4>
+						<h5 class="footer__contacts-item-info">г. Москва, Электролитный проезд, 3с8</h5>
+					</li>
+					<li class="footer__contacts-item">
+						<h4 class="footer__contacts-item-title">Производственная база</h4>
+						<h5 class="footer__contacts-item-info">
+							МО, дер, Поярково, ул. Клушинская, стр. 7 <br />
+							ПН-ЧТ: 09.00-18:00 <br />
+							ПТ: 09:00-17:00 <br />
+							сб-вс выходной
+						</h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <a href="" class="footer-moloko">site by moloko69</a>
+	</div>
+</footer>
+
 
 		<script src="assets/js/app.js"></script>
+		
 	</body>
 </html>

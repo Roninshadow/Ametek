@@ -1,0 +1,98 @@
+.header .header__1lvl {
+    background: #f6f6f6;
+}
+
+.header .header__1lvl .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header .header__1lvl .container .header__1lvl-name {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8e8f93;
+}
+
+.header .header__1lvl .container .header__1lvl-contacts {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 22px;
+}
+
+.header .header__1lvl .container .header__1lvl-numbers-list {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 22px;
+}
+
+.header .header__1lvl .container .header__1lvl-numbers-list .header__1lvl-number-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .header__1lvl .container .header__1lvl-numbers-list .header__1lvl-number-link {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header .header__1lvl .container .header__1lvl-numbers-list .header__1lvl-number-name {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8e8f93;
+}
+
+.header .header__2lvl {
+    background: #ffffff;
+}
+
+.header .header__2lvl .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 20px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header .header__2lvl .container svg {
+    width: 120px;
+    height: 50px;
+}
+
+.header .header__2lvl .container .header__2lvl-btn {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px 25px;
+    background: #339e61;
+    border-radius: 8px;
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.header .header__2lvl .container .header__2lvl-navList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .header__2lvl .container .header__2lvl-navList .header__2lvl-navItem {
+    color: #14141e;
+    font-weight: 400;
+    font-size: 16px;
+}
